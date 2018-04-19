@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ЖК Корабли</title>
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="menu-block">
+                <a href="#" class="btn-menu-open btn-blue">
+                    <span></span><span></span><span></span>
+                </a>
+                <div class="kor-menu">
+                    <a href="#" class="btn-menu-close">
+                        <span class="btn-close"></span>
+                    </a>
+                    <ul class="menu">
+                        <li class="active"><a href="#">О застройщике</a></li>
+                        <li class="folder"><a href="#">О проекте</a>
+                            <ul>
+                                <li><a href="#">Расположение </a></li>
+                                <li><a href="#"> О ЖК КОрабли</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Выбор квартир</a></li>
+                        <li class="folder">
+                            <a href="#">Динамика строительства</a>
+                            <ul>
+                                <li><a href="#">Фотоотчеты</a></li>
+                                <li><a href="#">Онлайн камера</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <a href="#">Галерея</a>
+                            <ul>
+                                <li><a href="#">3D Визуализация</a></li>
+                                <li><a href="#">3D виртуальный тур</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="kor-contacts">
+            <div id="rotate-device">
+                <div class="middle">
+                    <img src="img/rotate__device.svg">
+                </div>
+            </div>
+            <h1>Контакты</h1>
+            <div class="content">
+                <a class="phone" href="tel:+7 (831) 257-77-53">+7 (831) 257-77-53</a>
+                <address class="address">Нижний Новгород <br> <span class="strit">пр. Ленина, 100 в</span></address>
+                <div class="schedule">
+                    <p>Пн.-Пт.: 9:00-21:00</p>
+                    <p>Сб.-Вс.: 10:00-21:00</p>
+                </div>
+                <a class="cont-linck show-map" href="#">Показать на карте</a>
+                <a class="cont-linck" href="#">Проложить маршрут</a>
+                <a class="cont-linck feedback" href="#">Обратная связь</a>
+            </div>
+            <div class="map-block">
+                <a href="#" class="btn-menu-close tour-close">
+                    <span class="btn-close"></span>
+                </a>
+                <iframe src="https://snazzymaps.com/embed/65046" width="100%" height="100%" style="border:none;"></iframe>
+            </div>
+            <div class="lw-modal-body">
+                <a href="#" class="btn-menu-close">
+                    <span class="btn-close lw-modal-close close-icon"></span>
+                </a>
+                <div class="lw-modal-content">
+                    <div class="contacts-letter-form">
+                        <h1>Написать письмо <span>Оставьте свои пожелания или задайте вопрос</span></h1>
+
+                        <form id="w2" action="#" method="post">
+                            <input type="hidden" name="_csrf" value="">
+                            <div class="form-group field-contactsletter-name required">
+                                <input type="text" id="contactsletter-name" class="form-control" name="ContactsLetter[name]" maxlength="255" placeholder="Ваше имя">
+                                <div class="help-block"></div>
+                            </div>
+                            <div class="form-group field-contactsletter-mail required">
+                                <input type="text" id="contactsletter-phone" class="form-control" name="ContactsLetter[mail]" maxlength="255" placeholder="+7 (___) ___-__-__">
+                                <div class="help-block"></div>
+                            </div>
+                            <div class="form-group field-contactsletter-mail required">
+                                <input type="text" id="contactsletter-mail" class="form-control" name="ContactsLetter[mail]" maxlength="255" placeholder="Ваш e-mail"><div class="help-block"></div>
+                            </div>
+                            <div class="form-group field-contactsletter-message required">
+                                <textarea id="contactsletter-message" class="form-control" name="ContactsLetter[message]" rows="6" placeholder="Текст сообщения"></textarea><div class="help-block"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Отправить</button>
+                            </div>
+                            <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и
+                                <a href="#">согласие</a> на обработку персональных данных.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-mob footer-static">
+            <ul class="social-lincks">
+                <li><a href="#"><img src="img/fb.svg" alt="img"></a></li>
+                <li><a href="#"><img src="img/vk.svg" alt="img"></a></li>
+                <li><a href="#"><img src="img/ok.svg" alt="img"></a></li>
+                <li><a href="#"><img src="img/yt.svg" alt="img"></a></li>
+                <li><a href="#"><img src="img/inst.svg" alt="img"></a></li>
+            </ul>
+        </footer>
+    </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+
+

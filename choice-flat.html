@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ЖК Корабли</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="menu-block">
+                <a href="#" class="btn-menu-open btn-blue">
+                    <span></span><span></span><span></span>
+                </a>
+                <div class="kor-menu">
+                    <a href="#" class="btn-menu-close">
+                        <span class="btn-close"></span>
+                    </a>
+                    <ul class="menu">
+                        <li class="active"><a href="#">О застройщике</a></li>
+                        <li class="folder"><a href="#">О проекте</a>
+                            <ul>
+                                <li><a href="#">Расположение </a></li>
+                                <li><a href="#"> О ЖК КОрабли</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Выбор квартир</a></li>
+                        <li class="folder">
+                            <a href="#">Динамика строительствa</a>
+                            <ul>
+                                <li><a href="#">Фотоотчеты</a></li>
+                                <li><a href="#">Онлайн камера</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <a href="#">Галерея</a>
+                            <ul>
+                                <li><a href="#">3D Визуализация</a></li>
+                                <li><a href="#">3D виртуальный тур</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="kor-flat">
+            <div id="rotate-device">
+                <div class="middle">
+                    <img src="img/rotate__device.svg" alt="img">
+                </div>
+            </div>
+            <h1>Выбор квартир</h1>
+
+            <form method="post" class="ui-slider" action="#">
+                <div class="slider-holder">
+                    <div class="title">кол. комнат</div>
+                    <span class="default-value">Ст.</span>
+                    <span class="param-input" id="rooms-min"></span>
+                    <span class="param-input" id="rooms-max"></span>
+                    <div id="slider_1"></div>
+                    <span class="max-value">3</span>
+                </div>
+                <div class="slider-holder">
+                    <div class="title">этаж</div>
+                    <span class="default-value">1</span>
+                    <span class="param-input" id="floor-min"></span>
+                    <span class="param-input" id="floor-max"></span>
+                    <div id="slider_2"></div>
+                    <span class="max-value">17</span>
+                </div>
+                <div class="slider-holder">
+                    <div class="title">площадь</div>
+                    <span class="default-value">18</span>
+                    <span class="param-input"  id="area-min"></span>
+                    <span class="param-input"  id="area-max"></span>
+                    <div id="slider_3"></div>
+                    <span class="max-value">130</span>
+                </div>
+                <div class="slider-holder">
+                    <div class="title">Стоимость, до</div>
+                    <span class="param-input" id="amount-price"></span>
+                    <div id="slider_4"></div>
+                </div>
+                <div class="row">
+                    <div class="check-block">
+                        <input type="checkbox">
+                        <label>Лоджия</label>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox">
+                        <label>Балкон</label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="table">
+                <div class="thead">
+                    <div class="tr">
+                        <div class="td default" ><span>№</span> </div>
+                        <div class="td default" ><span>Этаж</span></div>
+                        <div class="td default rooms " ><span>Комнат</span> </div>
+                        <div class="td default" ><span>Пл., м<span class="top-i">2</span></span></div>
+                        <div class="td default price"><span>Стоимость, руб.</span></div>
+                    </div>
+                </div>
+                <div class="tbody">
+                    <a class="tr" href="#">
+                        <span class="td">452</span>
+                        <span class="td">3</span>
+                        <span class="td rooms ">3-комнатная</span>
+                        <span class="td">21</span>
+                        <span class="price td">1000150</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">842</span>
+                        <span class="td">5</span>
+                        <span class="rooms td">Студия</span>
+                        <span class="td">24,7</span>
+                        <span  class="price td">1150000</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">36</span>
+                        <span class="td">17</span>
+                        <span class="rooms td">Студия</span>
+                        <span class="td">26,9</span>
+                        <span class="price td">1270520</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">132</span>
+                        <span class="td">9</span>
+                        <span class="rooms td">1-комнатная</span>
+                        <span class="td">29,5</span>
+                        <span class="price td">1360500</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">93</span>
+                        <span class="td">1</span>
+                        <span class="rooms td">1-комнатная</span>
+                        <span class="td">32</span>
+                        <span class="price td">1500000</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">452</span>
+                        <span class="td">3</span>
+                        <span class="rooms td">Студия</span>
+                        <span class="td">21</span>
+                        <span class="price td">1000150</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">842</span>
+                        <span class="td">5</span>
+                        <span class="rooms td">Студия</span>
+                        <span class="td">24,7</span>
+                        <span  class="price td">1150000</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">36</span>
+                        <span class="td">17</span>
+                        <span class="rooms td">Студия</span>
+                        <span class="td">26,9</span>
+                        <span class="price td">1270520</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">132</span>
+                        <span class="td">9</span>
+                        <span class="rooms td">1-комнатная</span>
+                        <span class="td">29,5</span>
+                        <span class="price td">1360500</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">93</span>
+                        <span class="td">1</span>
+                        <span class="rooms td">1-комнатная</span>
+                        <span class="td">32</span>
+                        <span class="price td">1500000</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td">93</span>
+                        <span class="td">1</span>
+                        <span class="rooms td">1-комнатная</span>
+                        <span class="td">32</span>
+                        <span class="price td">1500000</span>
+                    </a>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li class="first active"><span>1</span></li>
+                <li><span>2</span></li>
+                <li class="last"><span>3</span></li>
+            </ul>
+        </section>
+        <footer class="footer-mob  footer-static">
+            <div class="row">
+                <a class="phone" href="tel:(831) 262-1-777"><span>(831) 262-1-777</span> </a>
+                <a class="modal-btn" href="#">Заказать звонок</a>
+            </div>
+            <address class="address">Нижний Новгород, пр. Ленина, 100 в</address>
+        </footer>
+    </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ЖК Корабли</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="menu-block">
+                <a href="#" class="btn-menu-open btn-blue">
+                    <span></span><span></span><span></span>
+                </a>
+                <div class="kor-menu">
+                    <a href="#" class="btn-menu-close">
+                        <span class="btn-close"></span>
+                    </a>
+                    <ul class="menu">
+                        <li class="active"><a href="#">О застройщике</a></li>
+                        <li class="folder"><a href="#">О проекте</a>
+                            <ul>
+                                <li><a href="#">Расположение </a></li>
+                                <li><a href="#"> О ЖК КОрабли</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Выбор квартир</a></li>
+                        <li class="folder">
+                            <a href="#">Динамика строительствa</a>
+                            <ul>
+                                <li><a href="#">Фотоотчеты</a></li>
+                                <li><a href="#">Онлайн камера</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <a href="#">Галерея</a>
+                            <ul>
+                                <li><a href="#">3D Визуализация</a></li>
+                                <li><a href="#">3D виртуальный тур</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="kor-plan">
+            <div id="rotate-device">
+                <div class="middle">
+                    <img src="img/rotate__device.svg">
+                </div>
+            </div>
+            <h1>choice-plan</h1>
+            <a href="#" class="btn-back"><span class="btn-arrow"></span><span class="btn-text">назад</span></a>
+            <div class="flat">
+                <ul class="flat-position">
+                    <li class="pos-item">
+                        <span class="pos-value">11</span>
+                        <span class="pos-title">дом</span>
+                    </li>
+                    <li class="pos-item">
+                        <span class="pos-value">17</span>
+                        <span class="pos-title">секция</span>
+                    </li>
+                    <li class="pos-item">
+                        <span class="pos-value">2</span>
+                        <span class="pos-title">этаж</span>
+                    </li>
+                    <li class="pos-item">
+                        <span class="pos-value">458</span>
+                        <span class="pos-title">квартира</span>
+                    </li>
+                </ul>
+                <h2 class="flat-title">1-комнатная</h2>
+                <div class="flat-charact">
+                    <ul class="charact">
+                        <li class="char-item"><span class="char-title">Общая пл.:</span><span class="char-value">28.3 м2</span></li>
+                        <li class="char-item"><span class="char-title">Жилая пл.:</span><span class="char-value">18.7 м2</span></li>
+                        <li class="char-item"><span class="char-title">Кухня:</span><span class="char-value">7 м2</span></li>
+                        <li class="char-item"><span class="char-title">Лоджия:</span><span class="char-value">3 м2</span></li>
+                    </ul>
+                </div>
+                <div class="flat-price">1 568 000 <span>руб</span></div>
+                <a  href="#" class="bron">заявка на бронь</a>
+                <div class="flat-img">
+                    <img src="img/plan-inner.png" alt="img">
+                </div>
+                <a href="#" class="calculator">ипотечный калькулятор</a>
+            </div>
+        </section>
+        <div class="lw-modal-body bron-modal">
+            <a href="#" class="btn-menu-close">
+                <span class="btn-close lw-modal-close close-icon"></span>
+            </a>
+            <div class="lw-modal-content">
+                <div class="contacts-bron-form">
+                    <h1>Заявка на бронь<span>Квартира № 458</span></h1>
+                    <form id="w0" action="#" method="post">
+                        <input type="hidden" name="_csrf" value="">
+                        <div class="form-group field-contacbron-name required">
+                            <input type="text" id="contactsbron-name" class="form-control" name="ContactsBron[name]" maxlength="255" placeholder="Ваше имя">
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group field-contactsletter-mail required">
+                            <input type="text" id="contactsbron-phone" class="form-control" name="ContactsBron[mail]" maxlength="255" placeholder="+7 (___) ___-__-__">
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Отправить</button>
+                        </div>
+                        <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и
+                            <a href="#">согласие</a> на обработку персональных данных.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-mob footer-static">
+            <div class="row">
+                <a class="phone" href="tel:(831) 262-1-777"><span>(831) 262-1-777</span> </a>
+                <a class="modal-btn" href="#">Заказать звонок</a>
+            </div>
+            <address class="address">Нижний Новгород, пр. Ленина, 100 в</address>
+        </footer>
+    </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+
+

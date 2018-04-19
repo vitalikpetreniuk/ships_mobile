@@ -1,0 +1,65 @@
+@media only screen and (min-width: 420px) {
+ body{
+  font-size: 18px;
+ }
+ .kor-menu ul.menu > li a{
+  font-size: 22px;
+  line-height: 38px;
+ }
+ .kor-menu ul.menu > li.folder.open li {
+  height: 36px;
+ }
+ .kor-menu ul.menu > li.folder li a {
+  font-size: 16px;
+  line-height: 36px;
+ }
+}
+@media only screen and (min-width: 520px) {
+ body{
+  font-size: 22px;
+ }
+ .dynamics-slick .slick-arrow {
+  bottom: -40px;
+ }
+ .kor-menu ul.menu > li a{
+  font-size: 28px;
+  line-height: 50px;
+ }
+ .kor-menu ul.menu > li.folder.open li {
+  height: 40px;
+ }
+ .kor-menu ul.menu > li.folder li a {
+  font-size: 20px;
+  line-height: 40px;
+ }
+}
+@media only screen and (min-width: 767px) {
+ body{
+  font-size: 26px;
+ }
+ .kor-gallery .dynamics-slick .slick-arrow {
+  bottom: 60px;
+ }
+ .dynamics-slick .slick-arrow {
+  bottom: -50px
+ }
+ .kor-menu ul.menu > li a{
+  font-size: 32px;
+  line-height: 60px;
+ }
+ .kor-menu ul.menu > li.folder.open li {
+  height: 50px;
+ }
+ .kor-menu ul.menu > li.folder li a {
+  font-size: 24px;
+  line-height: 50px;
+ }
+}
+
+@media only screen and (orientation: landscape){
+ #rotate-device{
+  display: block;
+ }
+}
+
+

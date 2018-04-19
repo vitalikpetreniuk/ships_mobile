@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ЖК Корабли</title>
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="menu-block">
+                <a href="#" class="btn-menu-open btn-blue">
+                    <span></span><span></span><span></span>
+                </a>
+                <div class="kor-menu">
+                    <a href="#" class="btn-menu-close">
+                        <span class="btn-close"></span>
+                    </a>
+                    <ul class="menu">
+                        <li class="active"><a href="#">О застройщике</a></li>
+                        <li class="folder"><a href="#">О проекте</a>
+                            <ul>
+                                <li><a href="#">Расположение </a></li>
+                                <li><a href="#"> О ЖК КОрабли</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Выбор квартир</a></li>
+                        <li class="folder">
+                            <a href="#">Динамика строительствa</a>
+                            <ul>
+                                <li><a href="#">Фотоотчеты</a></li>
+                                <li><a href="#">Онлайн камера</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <a href="#">Галерея</a>
+                            <ul>
+                                <li><a href="#">3D Визуализация</a></li>
+                                <li><a href="#">3D виртуальный тур</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="kor-calc">
+            <h1>Ипотечный калькулятор</h1>
+            <form method="post" class="ui-slider" action="#">
+                <div class="slider-holder">
+                    <div class="title">Стоимость квартиры:</div>
+                    <input class="param-input" type="text" id="amount-max" readonly placeholder="0"><label><i class="fa fa-rub" aria-hidden="true"></i></label>
+                    <div id="slider_5"></div>
+                </div>
+                <div class="slider-holder">
+                    <div class="title">Собственные средства:</div>
+                    <span class="oun-cach">85%</span>
+                    <input class="param-input" type="text" id="amount-max-first" readonly placeholder="0"><label><i class="fa fa-rub" aria-hidden="true"></i></label>
+                    <div id="slider_6"></div>
+                </div>
+                <div class="slider-holder">
+                    <div class="title">Срок кредита:</div>
+                    <input class="param-input" type="text" id="amount-max-year" readonly placeholder="0">
+                    <div id="slider_7"></div>
+                </div>
+                <div class="slider-holder">
+                    <div class="title">Сумма кредита:</div>
+                    <div class="sum-credit price">1568000</div>
+                </div>
+            </form>
+            <div class="table">
+                <div class="tcaption">Список банков партнеров</div>
+                <div class="thead">
+                    <div class="tr">
+                        <div class="td default image" ><span>Банк</span> </div>
+                        <div class="td default price" ><span>Сумма кредита</span></div>
+                        <div class="td default" ><span>Срок</span> </div>
+                        <div class="td default" ><span>Ставка</span></div>
+                        <div class="td default price"><span>Платеж</span></div>
+                    </div>
+                </div>
+                <div class="tbody">
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                    <a class="tr" href="#">
+                        <span class="td image"><img src="img/banc-linc.png" alt="img"></span>
+                        <span class="td price">3 520 000</span>
+                        <span class="td">10</span>
+                        <span class="td">18%</span>
+                        <span class="price td">50652</span>
+                    </a>
+                </div>
+            </div>
+            <div id="rotate-device">
+                <div class="middle">
+                    <img src="img/rotate__device.svg">
+                </div>
+            </div>
+        </section>
+        <div class="lw-modal-body">
+            <a href="#" class="btn-menu-close">
+                <span class="btn-close lw-modal-close close-icon"></span>
+            </a>
+            <div class="lw-modal-content">
+                <div class="contacts-phone-form">
+                    <h1>Заказать звонок <span>Оставьте свои данные и мы Вам перезвоним</span></h1>
+                    <form id="w1" action="#" method="post">
+                        <input type="hidden" name="_csrf" value="">
+                        <div class="form-group field-contactsphone-name required">
+                            <input type="text" id="contactsphone-name" class="form-control" name="ContactsPhone[name]" maxlength="255" placeholder="Ваше имя">
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group field-contactsletter-mail required">
+                            <input type="text" id="contactsphone-phone" class="form-control" name="ContactsPhone[mail]" maxlength="255" placeholder="+7 (___) ___-__-__">
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Отправить</button>
+                        </div>
+                        <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и
+                            <a href="#">согласие</a> на обработку персональных данных.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-mob footer-static">
+            <div class="row">
+                <a class="phone" href="tel:(831) 262-1-777"><span>(831) 262-1-777</span> </a>
+                <a class="modal-btn" href="#">Заказать звонок</a>
+            </div>
+            <address class="address">Нижний Новгород, пр. Ленина, 100 в</address>
+        </footer>
+    </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+
+
